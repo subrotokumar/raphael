@@ -1,0 +1,15 @@
+version: 3
+
+tasks:
+  list:
+    desc: List all command
+    cmds: ["task --list-all"]
+  
+  decrypt:
+    desc: Decrypt crendential
+    cmds: ["sops --decrypt --in-place .env"]
+
+  encrypt:
+    desc: Encrypt crendential
+    cmds: ["sops --encrypt --in-place .env"]
+  

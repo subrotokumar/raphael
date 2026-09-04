@@ -7,7 +7,10 @@ authors = [
     { name = "subrotokumar", email = "subrotokumar@outlook.in" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "dotenv>=0.9.9",
+    "openai>=3.8.0",
+]
 
 [project.scripts]
 raphael = "raphael:main"
