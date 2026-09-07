@@ -2,14 +2,17 @@ version: 3
 
 tasks:
   list:
+    aliases: [ls]
     desc: List all command
     cmds: ["task --list-all"]
   
   decrypt:
+    aliases: [d]
     desc: Decrypt crendential
     cmds: ["sops --decrypt --in-place .env"]
 
   encrypt:
+    aliases: [e]
     desc: Encrypt crendential
     cmds: ["sops --encrypt --in-place .env"]
   
